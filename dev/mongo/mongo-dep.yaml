@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: test-2
+  name: my-mongo
+spec:
+  selector:
+    matchLabels:
+      run: my-mongo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: my-mongo
+    spec:
+      containers:
+      - name: my-mongo
+        image: mongo
+        ports:
+        - containerPort: 27017
+
+
