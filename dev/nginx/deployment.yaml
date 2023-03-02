@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: test-1
+  namespace: dev
   name: my-nginx
 spec:
   selector:

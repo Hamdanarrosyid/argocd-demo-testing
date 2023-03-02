@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  namespace: test-2
+  namespace: dev
   name: my-mongo
 spec:
   selector:
